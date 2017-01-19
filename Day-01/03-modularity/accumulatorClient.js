@@ -1,4 +1,6 @@
-var accumulator = require('./accumulator');
+var accumulatorFactory = require('./accumulator'),
+	accumulator = accumulatorFactory();
+	
 accumulator.add(100);
 accumulator.subtract(50);
 accumulator.multiply(10);
